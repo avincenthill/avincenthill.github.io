@@ -23,37 +23,26 @@
         <![endif]-->
         <div class="header-container">
             <header class="wrapper clearfix">
-                <h1 class="title">ASCII Caesar Cypher</h1>
-                <p class="subtitle">Alex Vincent-Hill <br> 04 Mar 2016</p>
+                <h1 class="title">Alexander John Vincent-Hill</h1>
+                <p class="subtitle"><a href="mailto:alexanderjvincenthill@gmail.com">alexanderjvincenthill@gmail.com<span class="glyphicon glyphicon-envelope"></span></a><br><a href="http://www.github.com/avincenthill">avincenthill.github.io<span class="glyphicon glyphicon-folder-open"></span></a></p>
             </header>
         </div>
+        
+        <div id="maincarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active center-cropped"
+                    style="background-image: url('img/DSC_0724.jpg');">
+                </div>
+                <div class="item center-cropped"
+                    style="background-image: url('img/IMG_0481.jpg');">
+                </div>
+            </div>
+        </div>
+        
         <div class="main-container">
             <div class="main wrapper clearfix">
-                <form class="form-inline" style="margin-top:1em;margin-bottom:1em;">
-                    <div id="shiftField">
-                        <h2> Choose a secret number: <br> </h2>
-                        <input class="form-control" id="numericalShift" placeholder="Enter an integer" type="number">
-                    </div>
-                    <div id="decryptField" class="form-group">
-                        <h2> Enter text to encrypt or decrypt: <br> </h2>
-                        <input class="form-control" id="rawString" placeholder="Enter plaintext to encrypt" type="text">
-                        <button class="btn btn-sm btn-danger" id="encrypt" type="button">Encrypt!</button>
-                        <button class="btn btn-sm btn-info" id="bruteForce" type="button">Parse all possible alphabetic ASCII table rotations</button>
-                    </div>
-                </form>
-                <form class="form-inline" style="margin-top:1em;margin-bottom:1em;">
-                    <div id="encryptField" class="form-group">
-                        <input class="form-control" id="encryptedString" placeholder="Enter plaintext to decrypt" type="text">
-                        <button type="button" class="btn btn-sm btn-success" id="decrypt" >Decrypt!</button>
-                        <button class="btn btn-sm btn-info" id="smartBrute" type="button">Parse the rotations most likely to be an English message</button>
-                    </div>
-                </form>
-                <h2>Console readout: <br> </h2>
-                <form class="parsed" style="margin-top:0;margin-bottom:1em;">
-                    <div id="parsedField" class="form-group">
-                        <textarea class="form-control" id="parsedStrings" placeholder="Possible strings:" name="Text1" cols="125" rows="97"></textarea>
-                    </div>
-                </form>
+
             </div> <!-- #main -->
         </div> <!-- #main-container -->
         <div class="footer-container">
@@ -62,7 +51,6 @@
         </div>
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-        <script src="js/caesarCypher.js"></script>
         <script src="js/main.js"></script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>

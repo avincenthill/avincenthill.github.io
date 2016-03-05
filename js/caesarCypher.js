@@ -28,6 +28,15 @@ function encrypt(){
 	var rawString = document.getElementById('rawString').value;
 	var numericalShift = document.getElementById('numericalShift').value;
 	document.getElementById('encryptedString').value = cypher(rawString, numericalShift);
+    document.getElementById('parsedStrings').value = ""
+    if (rawString.length != 0){
+        if (numericalShift<10){
+            document.getElementById('parsedStrings').value = "0" + numericalShift%96 + " " + cypher(rawString, numericalShift) + "\n"	
+        }
+        else {
+            document.getElementById('parsedStrings').value = numericalShift%96 + " " + cypher(rawString, numericalShift) + "\n"
+        }
+    }
 }
 
 //Calls cypher on input string with numerical shift negated, decrypting the string
@@ -35,6 +44,15 @@ function decrypt(){
 	var encryptedString = document.getElementById('encryptedString').value;
 	var numericalShift = document.getElementById('numericalShift').value;
 	document.getElementById('encryptedString').value = cypher(encryptedString, -numericalShift);
+    document.getElementById('parsedStrings').value = ""
+    if (encryptedString.length != 0){
+        if (numericalShift<10){
+            document.getElementById('parsedStrings').value = "0" + numericalShift%96 + " " + cypher(encryptedString, numericalShift) + "\n"
+        }
+        else {
+            document.getElementById('parsedStrings').value = numericalShift%96 + " " + cypher(encryptedString, numericalShift) + "\n"
+        }
+    }
 }
 
 //Parses all possible shifted strings for an encrypted string input
@@ -211,7 +229,7 @@ function smartEnglishBruteForce() {
 	if (encryptedString.value.length != 0) {
 		for (var i = 0; i < 96; i++) {
 			rotatedString = cypher(encryptedString.value, i)
-			ratedStrings.push({"string":rotatedString, "rating":howEnglish(rotatedString), "shift":i})
+			ratedStrings.push({"string":rotatedString, "rating":howEnglish(rotatedString), "shift":96-i})
 		};
 	};
 	console.log(ratedStrings.sort(function(a,b){

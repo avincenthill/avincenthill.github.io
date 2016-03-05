@@ -15,64 +15,55 @@
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="fonts/bebasneue/stylesheet.css">
-
-
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
         <div class="header-container">
             <header class="wrapper clearfix">
                 <h1 class="title">ASCII Caesar Cypher</h1>
-                <p class="subtitle">Alex Vincent-Hill, 04 Mar 2016</p>
+                <p class="subtitle">Alex Vincent-Hill <br> 04 Mar 2016</p>
             </header>
         </div>
-
         <div class="main-container">
             <div class="main wrapper clearfix">
-
                 <form class="form-inline" style="margin-top:1em;margin-bottom:1em;">
                     <div id="shiftField">
-                        <h1> <input class="form-control" id="numericalShift" placeholder="Enter an integer" type="number"> <span class="label label-primary">This is your numerical shift</span>
-                        </h1>
+                        <h2> Choose a secret number: <br> </h2>
+                        <input class="form-control" id="numericalShift" placeholder="Enter an integer" type="number">
                     </div>
                     <div id="decryptField" class="form-group">
-                        <input class="form-control" id="rawString" placeholder="Enter plaintext" type="text">
-                        <button class="btn btn-sm btn-danger" id="encrypt" type="button">Encrypt this text</button>
-                        <button class="btn btn-sm btn-info" id="bruteForce" type="button">All possible alphabetic ASCII table rotations</button>
+                        <h2> Enter text to encrypt or decrypt: <br> </h2>
+                        <input class="form-control" id="rawString" placeholder="Enter plaintext to encrypt" type="text">
+                        <button class="btn btn-sm btn-danger" id="encrypt" type="button">Encrypt!</button>
+                        <button class="btn btn-sm btn-info" id="bruteForce" type="button">Parse all possible alphabetic ASCII table rotations</button>
                     </div>
                 </form>
                 <form class="form-inline" style="margin-top:1em;margin-bottom:1em;">
                     <div id="encryptField" class="form-group">
-                        <input class="form-control" id="encryptedString" placeholder="Enter plaintext" type="text">
-                        <button type="button" class="btn btn-sm btn-success" id="decrypt" >Decrypt this text</button>
-                        <button class="btn btn-sm btn-info" id="smartBrute" type="button">Five strings most likely to be English</button>
+                        <input class="form-control" id="encryptedString" placeholder="Enter plaintext to decrypt" type="text">
+                        <button type="button" class="btn btn-sm btn-success" id="decrypt" >Decrypt!</button>
+                        <button class="btn btn-sm btn-info" id="smartBrute" type="button">Parse the rotations most likely to be an English message</button>
                     </div>
                 </form>
+                <h2>Console readout: <br> </h2>
                 <form class="parsed" style="margin-top:0;margin-bottom:1em;">
                     <div id="parsedField" class="form-group">
                         <textarea class="form-control" id="parsedStrings" placeholder="Possible strings:" name="Text1" cols="125" rows="97"></textarea>
                     </div>
                 </form>
-
             </div> <!-- #main -->
         </div> <!-- #main-container -->
-
         <div class="footer-container">
             <footer class="wrapper">
-                <h3>footer</h3>
             </footer>
         </div>
-
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/caesarCypher.js"></script>
-
         <script src="js/main.js"></script>
-
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

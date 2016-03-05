@@ -31,11 +31,11 @@
             <div class="main wrapper clearfix">
                 <form class="form-inline" style="margin-top:1em;margin-bottom:1em;">
                     <div id="shiftField">
-                        <h2> Choose a secret number: <br> </h2>
+                        <h2 class="directions"> Choose a secret number: <br> </h2>
                         <input class="form-control" id="numericalShift" placeholder="Enter an integer" type="number">
                     </div>
                     <div id="decryptField" class="form-group">
-                        <h2> Enter text to encrypt or decrypt: <br> </h2>
+                        <h2 class="directions"> Enter text to encrypt or decrypt: <br> </h2>
                         <input class="form-control" id="rawString" placeholder="Enter plaintext to encrypt" type="text">
                         <button class="btn btn-sm btn-danger" id="encrypt" type="button">Encrypt!</button>
                         <button class="btn btn-sm btn-info" id="bruteForce" type="button">Parse all possible alphabetic ASCII table rotations</button>
@@ -48,7 +48,7 @@
                         <button class="btn btn-sm btn-info" id="smartBrute" type="button">Parse the rotations most likely to be an English message</button>
                     </div>
                 </form>
-                <h2>Console readout: <br> </h2>
+                <h2 class="directions">Console readout: <br> </h2>
                 <form class="parsed" style="margin-top:0;margin-bottom:1em;">
                     <div id="parsedField" class="form-group">
                         <textarea class="form-control" id="parsedStrings" placeholder="Possible strings:" name="Text1" cols="125" rows="97"></textarea>

@@ -97,11 +97,16 @@ body {
     position: relative;
     top: 65px;
     font-family: 'bebas_neueregular', Fallback, sans-serif;
-    font-weight: bold;
+
     font-size: 30px;
     color: white;
 }
 
+.directions {
+    font-family: 'bebas_neueregular', Fallback, sans-serif;
+    font-size: 30px;
+    color: #000000;
+}
 /* ==============
     MOBILE: Menu
    ============== */

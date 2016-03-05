@@ -47,10 +47,10 @@ function decrypt(){
     document.getElementById('parsedStrings').value = ""
     if (encryptedString.length != 0){
         if (numericalShift<10){
-            document.getElementById('parsedStrings').value = "0" + numericalShift%96 + " " + cypher(encryptedString, numericalShift) + "\n"
+            document.getElementById('parsedStrings').value = "0" + numericalShift%96 + " " + cypher(encryptedString, -numericalShift) + "\n"
         }
         else {
-            document.getElementById('parsedStrings').value = numericalShift%96 + " " + cypher(encryptedString, numericalShift) + "\n"
+            document.getElementById('parsedStrings').value = numericalShift%96 + " " + cypher(encryptedString, -numericalShift) + "\n"
         }
     }
 }

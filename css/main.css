@@ -70,7 +70,6 @@ body {
    =================== */
 
 .header-container {
-    height: 80px
 }
 
 .footer-container,
@@ -96,7 +95,17 @@ body {
     opacity: .87;
 }
 
-.subtitle {
+.subtitle.left {
+    position: absolute;
+    float: left;
+    top: 15px;
+    left: 20px;
+    font-size: 30px;
+    color: #000000;
+    opacity: .54;
+}
+
+.subtitle.right {
     position: absolute;
     float: right;
     top: 15px;
@@ -125,13 +134,14 @@ body {
     vertical-align: middle;
     top: -1px;
     margin-left: 5px;
+    margin-right: 5px;
     font-size: .8em;
     color: black;
     opacity: .54;
 }
 
 .carousel-inner div {
-    height: 500px;
+    height: 800px;
     width: 100%;
     background-size: cover;
     background-position: center center;

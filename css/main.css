@@ -103,12 +103,13 @@ body {
 }
 
 .title {
+    display: block;
     position: relative;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     top: 40px;
     text-align: center;
-    width: 100%;
+    max-width: 60%;
     margin: auto;
     font-family: 'bebas_neueregular', Fallback, sans-serif;
     font-size: 60px;
@@ -156,6 +157,7 @@ body {
 }
 
 .subtitle > a {
+    display: block;
     float: right;
     font-family: 'bebas_neueregular', Fallback, sans-serif;
     font-size: 30px;
@@ -185,7 +187,7 @@ body {
 
 .projects{
     display: block;
-    height: 950px;
+    height: 850px;
 }
 
 .project-wrapper{
@@ -206,13 +208,14 @@ body {
 }
 
 .main.wrapper.clearfix{
-    min-width: 400px;
+    min-width: 300px;
     width: 100%;
     height: auto;
     overflow-x: hidden;
     overflow-y: hidden;
     position: relative;
     top: -10px;
+    left: 1%;
     margin-bottom: 4%;
 }
 
@@ -313,9 +316,8 @@ nav a:hover {
     INTERMEDIATE: Menu
    ==================== */
     
-    .projects{
-        display: block;
-        height: 850px;
+    .title {
+        max-width: 75%; 
     }
     
     .main.wrapper.clearfix{
@@ -362,10 +364,6 @@ nav a:hover {
 /* ============
     WIDE: Menu
    ============ */
-
-    .title {
-        float: left;
-    }
 
     nav {
         float: right;

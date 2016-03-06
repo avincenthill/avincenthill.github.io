@@ -56,6 +56,10 @@ textarea {
    Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
    ========================================================================== */
 
+.subtitle-text {
+    display: none;
+}
+
 body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
@@ -70,6 +74,7 @@ body {
    =================== */
 
 .header-container {
+    height: 81px;
 }
 
 .footer-container,
@@ -91,7 +96,7 @@ body {
     width: 100%;
     margin: auto;
     font-family: 'bebas_neueregular', Fallback, sans-serif;
-    font-size: 74px;
+    font-size: 60px;
     font-weight: 500;
     font-kerning: normal;
     color: #000000;
@@ -110,12 +115,15 @@ body {
 
 .subtitle.right {
     position: absolute;
-    float: right;
     top: 15px;
     right: 20px;
     font-size: 30px;
     color: #000000;
     opacity: .54;
+}
+
+.subtitle-text {
+    display: none;
 }
 
 .subtitle > a {
@@ -125,12 +133,6 @@ body {
     color: #000000;
     opacity: .54;
     text-decoration: none;
-}
-
-.directions {
-    font-family: 'bebas_neueregular', Fallback, sans-serif;
-    font-size: 30px;
-    color: #000000;
 }
 
 .glyphicon {
@@ -143,47 +145,14 @@ body {
     opacity: .54;
 }
 
-.carousel-inner div {
+#mainpic {
     height: 800px;
-    width: 100%;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
     overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-image: "img/DSC_0724.jpg";
+    background-repeat: no-repeat;
 }
-
-.carousel-fade .carousel-inner .item {
-  -webkit-transition-property: opacity;
-          transition-property: opacity;
-}
-
-.carousel-fade .carousel-inner .item,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  opacity: 0;
-}
-
-.carousel-fade .carousel-inner .active,
-.carousel-fade .carousel-inner .next.left,
-.carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
-}
-
-.carousel-fade .carousel-inner .next,
-.carousel-fade .carousel-inner .prev,
-.carousel-fade .carousel-inner .active.left,
-.carousel-fade .carousel-inner .active.right {
-  left: 0;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0);
-}
-
-.carousel-fade{
-    z-index: -1;
-    margin-bottom: 20px;
-    background-color: black;
-}
-
 
 .projects{
     display: block;
@@ -315,6 +284,7 @@ nav a:hover {
     INTERMEDIATE: Menu
    ==================== */
 
+
     .main.wrapper.clearfix{
         min-width: 400px;
         width: 100%;
@@ -390,11 +360,31 @@ nav a:hover {
 }
 
 @media only screen and (min-width: 1140px) {
+    
+    .title {
+        font-size: 60px;
+    }
+    
+
+    .subtitle-text {
+        display: none;
+    }
+    
+}
+
+@media only screen and (min-width: 1500px) {
 
 /* ===============
     Maximal Width
    =============== */
-    
+    .title {
+        font-size: 74px;
+    }
+
+    .subtitle-text {
+        display: inline;
+    }
+
     .main.wrapper.clearfix{
         min-width: 400px;
         width: 780px;

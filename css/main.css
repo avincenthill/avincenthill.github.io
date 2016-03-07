@@ -1,4 +1,5 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+
 * {
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
@@ -87,6 +88,10 @@ body {
     height: 81px;
 }
 
+.mainpic-container {
+    height: 1000px;
+}
+
 .footer-container,
 .main aside {
     font-family: 'bebas_neueregular', Fallback, sans-serif;
@@ -120,6 +125,19 @@ body {
 }
 
 .title-project {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    font-family: 'bebas_neueregular', Fallback, sans-serif;
+    font-size: 60px;
+    font-size: 6.0vmin;
+    font-weight: 500;
+    font-kerning: normal;
+    color: #000000;
+    opacity: .87;
+}
+
+.title-countries {
     text-align: center;
     width: 100%;
     margin: auto;
@@ -176,8 +194,9 @@ body {
 }
 
 #mainpic {
-    height: 800px;
+    height: 100%;
     overflow: hidden;
+    display: block;
     background-size: cover;
     background-position: center;
     background-image: url('/img/DSC_0724.jpg');
@@ -206,6 +225,15 @@ body {
     height: 100%;
 }
 
+IMG.countries {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
 .main.wrapper.clearfix{
     min-width: 300px;
     width: 100%;
@@ -215,13 +243,6 @@ body {
     position: relative;
     top: -10px;
     left: 1%;
-}
-
-.resume {
-    width: calc(100% + 36px);
-    position: relative;
-    top: -50px;
-    height: 900px;
 }
 
 /* ==============
@@ -311,10 +332,6 @@ nav a:hover {
 
 @media only screen and (min-width: 480px) {
 
-/* ====================
-    INTERMEDIATE: Menu
-   ==================== */
-    
     .title {
         max-width: 75%; 
     }
@@ -340,10 +357,6 @@ nav a:hover {
         margin-right: 0;
     }
 
-/* ========================
-    INTERMEDIATE: IE Fixes
-   ======================== */
-
     nav ul li {
         display: inline;
     }
@@ -355,24 +368,12 @@ nav a:hover {
 
 @media only screen and (min-width: 768px) {
 
-/* ====================
-    WIDE: CSS3 Effects
-   ==================== */
-
-
-/* ============
-    WIDE: Menu
-   ============ */
 
     nav {
         float: right;
         width: 38%;
     }
 
-/* ============
-    WIDE: Main
-   ============ */
-    
     .projects{
         display: block;
         height: 650px;
@@ -419,10 +420,6 @@ nav a:hover {
 
 @media only screen and (min-width: 1500px) {
 
-/* ===============
-    Maximal Width
-   =============== */
-    
     .projects{
         display: block;
         height: 350px;
@@ -437,7 +434,7 @@ nav a:hover {
         width: 780px;
     }
     .wrapper {
-        width: 1026px; /* 1140px - 10% for margins */
+        width: 1026px;
         margin: 0 auto;
     }
 }

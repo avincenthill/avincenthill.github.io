@@ -88,9 +88,6 @@ body {
     height: 81px;
 }
 
-.mainpic-container {
-    height: 1000px;
-}
 
 .footer-container,
 .main aside {
@@ -193,14 +190,19 @@ body {
     opacity: .54;
 }
 
+.mainpic-container {
+
+}
+
 #mainpic {
     height: 100%;
+    width: auto;
     overflow: hidden;
     display: block;
     background-size: cover;
     background-position: center;
     background-image: url('/img/DSC_0724.jpg');
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
 }
 
 .projects{
@@ -297,7 +299,7 @@ nav a:hover {
 
 .footer-container footer {
     color: white;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 /* ===============

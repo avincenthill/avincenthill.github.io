@@ -310,6 +310,37 @@ nav a:hover {
     padding-top: 10px;
 }
 
+.carousel-inner{
+    position:relative;
+    top:0;
+    overflow: hidden;
+    display: block;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 50;
+  width: 60%;
+  padding-left: 0;
+  margin-left: -30%;
+  text-align: center;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px solid #fff;
+}
+
+
 
 .carousel-fade .carousel-inner .item {
   opacity: 0;
@@ -387,10 +418,6 @@ now override the 3.3 new styles for modern browsers & apply opacity
 
 @media only screen and (min-width: 480px) {
 
-    .title {
-        max-width: 75%; 
-    }
-    
     .main.wrapper.clearfix{
         min-width: 400px;
         width: 100%;

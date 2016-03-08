@@ -1,9 +1,9 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 
 * {
-  -webkit-transform-style: preserve-3d;
-  -moz-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
 }
 
 html {
@@ -14,7 +14,7 @@ html {
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 ::-moz-selection {
@@ -80,6 +80,7 @@ body {
     margin: auto;
 }
 
+
 /* ===================
     ALL: Custom Theme
    =================== */
@@ -87,7 +88,6 @@ body {
 .header-container {
     height: 81px;
 }
-
 
 .footer-container,
 .main aside {
@@ -107,14 +107,14 @@ body {
     display: block;
     position: relative;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
+    transform: translateY(-50%);
     top: 40px;
     text-align: center;
     max-width: 60%;
     margin: auto;
     font-family: 'bebas_neueregular', Fallback, sans-serif;
     font-size: 60px;
-    font-size: 7.3vmin;
+    font-size: 10vmin;
     font-weight: 500;
     font-kerning: normal;
     color: #000000;
@@ -190,9 +190,7 @@ body {
     opacity: .54;
 }
 
-.mainpic-container {
-
-}
+.mainpic-container {}
 
 #mainpic {
     height: 100%;
@@ -202,27 +200,27 @@ body {
     background-size: cover;
     background-position: center;
     background-image: url('/img/DSC_0724.jpg');
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
 }
 
-.projects{
+.projects {
     display: block;
     height: 850px;
 }
 
-.project-wrapper{
+.project-wrapper {
     display: block;
     text-align: center;
 }
 
-.project-link{
+.project-link {
     display: inline-block;
     margin: auto;
     height: 250px;
     width: 250px;
 }
 
-.project-img{
+.project-img {
     display: block;
     height: 100%;
 }
@@ -233,10 +231,11 @@ IMG.countries {
     margin-right: auto;
     max-width: 100%;
     height: auto;
-    width: auto\9; /* ie8 */
+    width: auto\9;
+    /* ie8 */
 }
 
-.main.wrapper.clearfix{
+.main.wrapper.clearfix {
     min-width: 300px;
     width: 100%;
     height: 900px;
@@ -246,6 +245,7 @@ IMG.countries {
     top: -10px;
     left: 1%;
 }
+
 
 /* ==============
     MOBILE: Menu
@@ -261,11 +261,9 @@ nav a {
     display: block;
     margin-bottom: 10px;
     padding: 10px 0;
-
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-
     color: white;
     background: #e44d26;
 }
@@ -278,6 +276,7 @@ nav a:visited {
 nav a:hover {
     text-decoration: underline;
 }
+
 
 /* ==============
     MOBILE: Main
@@ -302,6 +301,7 @@ nav a:hover {
     padding: 40px 0;
 }
 
+
 /* ===============
     ALL: IE Fixes
    =============== */
@@ -310,106 +310,96 @@ nav a:hover {
     padding-top: 10px;
 }
 
-.carousel-inner{
-    position:relative;
-    top:0;
+.carousel-inner {
+    position: relative;
+    top: 0;
     overflow: hidden;
     display: block;
 }
 
 .carousel-indicators {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  z-index: 50;
-  width: 60%;
-  padding-left: 0;
-  margin-left: -30%;
-  text-align: center;
-  list-style: none;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    z-index: 50;
+    width: 60%;
+    padding-left: 0;
+    margin-left: -30%;
+    text-align: center;
+    list-style: none;
 }
 
 .carousel-indicators li {
-  display: inline-block;
-  width: 10px;
-  height: 10px;
-  margin: 1px;
-  cursor: pointer;
-  background-color: #000 \9;
-  background-color: rgba(0, 0, 0, 0);
-  border: 2px solid #fff;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 1px;
+    cursor: pointer;
+    background-color: #000 \9;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
 }
 
-
-
 .carousel-fade .carousel-inner .item {
-  opacity: 0;
-  transition-property: opacity;
-  transition-duration: 4s;
-  transition-timing-function:linear;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 4s;
+    transition-timing-function: linear;
 }
 
 .carousel-fade .carousel-inner .active {
-  opacity: 1;
+    opacity: 1;
 }
 
 .carousel-fade .carousel-inner .active.left,
 .carousel-fade .carousel-inner .active.right {
-  left: 0;
-  opacity: 0;
-  z-index: 1;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
 }
 
 .carousel-fade .carousel-inner .next.left,
 .carousel-fade .carousel-inner .prev.right {
-  opacity: 1;
+    opacity: 1;
 }
 
 .carousel-fade .carousel-control {
-  z-index: 2;
+    z-index: 2;
 }
+
 
 /*
 WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
 now override the 3.3 new styles for modern browsers & apply opacity
 */
-@media all and (transform-3d), (-webkit-transform-3d) {
+
+@media all and (transform-3d),
+(-webkit-transform-3d) {
     .carousel-fade .carousel-inner > .item.next,
     .carousel-fade .carousel-inner > .item.active.right {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
     .carousel-fade .carousel-inner > .item.prev,
     .carousel-fade .carousel-inner > .item.active.left {
-      opacity: 0;
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
     .carousel-fade .carousel-inner > .item.next.left,
     .carousel-fade .carousel-inner > .item.prev.right,
     .carousel-fade .carousel-inner > .item.active {
-      opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
     }
 }
+
+
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* ==========================================================================
@@ -417,12 +407,10 @@ now override the 3.3 new styles for modern browsers & apply opacity
    ========================================================================== */
 
 @media only screen and (min-width: 480px) {
-
-    .main.wrapper.clearfix{
+    .main.wrapper.clearfix {
         min-width: 400px;
         width: 100%;
     }
-    
     nav a {
         float: left;
         width: 27%;
@@ -430,88 +418,69 @@ now override the 3.3 new styles for modern browsers & apply opacity
         padding: 25px 2%;
         margin-bottom: 0;
     }
-
     nav li:first-child a {
         margin-left: 0;
     }
-
     nav li:last-child a {
         margin-right: 0;
     }
-
     nav ul li {
         display: inline;
     }
-
     .oldie nav a {
         margin: 0 0.7%;
     }
 }
 
 @media only screen and (min-width: 768px) {
-
-
     nav {
         float: right;
         width: 38%;
     }
-
-    .projects{
+    .projects {
         display: block;
         height: 650px;
     }
-    
-    .main.wrapper.clearfix{
+    .main.wrapper.clearfix {
         min-width: 400px;
         width: 70%;
     }
-    
     .main article {
         float: left;
         width: 70%;
     }
-
     .main aside {
         float: right;
         width: 30%;
     }
 }
 
-
 @media only screen and (min-width: 900px) {
-    
-    .projects{
+    .projects {
         display: block;
         height: 650px;
     }
-    
 }
 
 @media only screen and (min-width: 1140px) {
-    
-    .projects{
+    .projects {
         display: block;
         height: 350px;
     }
-    
     .subtitle-text {
         display: none;
     }
-    
 }
 
 @media only screen and (min-width: 1500px) {
-
-    .projects{
+    .projects {
         display: block;
         height: 350px;
     }
-
     .subtitle-text {
         display: inline;
     }
-
-    .main.wrapper.clearfix{
+    .main.wrapper.clearfix {
         min-width: 400px;
         width: 780px;
     }
@@ -520,6 +489,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
         margin: 0 auto;
     }
 }
+
 
 /* ==========================================================================
    Helper classes
@@ -569,6 +539,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     *zoom: 1;
 }
 
+
 /* ==========================================================================
    Print styles
    ========================================================================== */
@@ -582,51 +553,41 @@ now override the 3.3 new styles for modern browsers & apply opacity
         box-shadow: none !important;
         text-shadow: none !important;
     }
-
     a,
     a:visited {
         text-decoration: underline;
     }
-
     a[href]:after {
         content: " (" attr(href) ")";
     }
-
     abbr[title]:after {
         content: " (" attr(title) ")";
     }
-
     a[href^="#"]:after,
     a[href^="javascript:"]:after {
         content: "";
     }
-
     pre,
     blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
-
     thead {
         display: table-header-group;
     }
-
     tr,
     img {
         page-break-inside: avoid;
     }
-
     img {
         max-width: 100% !important;
     }
-
     p,
     h2,
     h3 {
         orphans: 3;
         widows: 3;
     }
-
     h2,
     h3 {
         page-break-after: avoid;

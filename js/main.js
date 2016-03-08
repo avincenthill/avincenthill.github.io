@@ -1,3 +1,8 @@
-//Changes subtitle to today's date
-var d = new Date();
-document.getElementById("date").innerHTML += " " + d.toDateString();
+//Adds today's date to subtitle
+
+function putsTodaysDateFormatted(htmlId) {
+    var d = new Date();
+    document.getElementById(htmlId).innerHTML += " " + d.toDateString();
+};
+
+putsTodaysDateFormatted("date");

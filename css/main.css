@@ -310,6 +310,15 @@ nav a:hover {
     padding-top: 10px;
 }
 
+.carousel {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: block;
+    height: auto;
+    margin-top: 20px;
+    margin-top: 3vh;
+}
+
 .carousel-inner {
     position: relative;
     top: 0;

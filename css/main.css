@@ -201,6 +201,13 @@ body {
     display: block;
     height: 850px;
 }
+.project-wrapper:hover > .project-link:hover {
+    opacity: 1;
+}
+    
+.project-wrapper:hover > .project-link {
+    opacity: 0.75;
+}
 
 .project-wrapper {
     display: block;
@@ -212,6 +219,7 @@ body {
     margin: auto;
     height: 250px;
     width: 250px;
+    transition: opacity ease-in-out 0.2s;
 }
 
 .project-img {

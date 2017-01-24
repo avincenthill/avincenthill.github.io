@@ -108,7 +108,7 @@ body {
     margin: auto;
     font-family: 'bebas_neueregular', Fallback, sans-serif;
     font-size: 60px;
-    font-size: 10vmin;
+    font-size: 8vmin;
     font-weight: 500;
     font-kerning: normal;
     color: #000000;
@@ -199,14 +199,14 @@ body {
 
 .projects {
     display: block;
-    height: 850px;
+    height: auto;
 }
 .project-wrapper:hover > .project-link:hover {
     opacity: 1;
 }
     
 .project-wrapper:hover > .project-link {
-    opacity: 0.75;
+    opacity: 0.25;
 }
 
 .project-wrapper {
@@ -450,7 +450,6 @@ now override the 3.3 new styles for modern browsers & apply opacity
     }
     .projects {
         display: block;
-        height: 650px;
     }
     .main.wrapper.clearfix {
         min-width: 400px;
@@ -469,14 +468,12 @@ now override the 3.3 new styles for modern browsers & apply opacity
 @media only screen and (min-width: 900px) {
     .projects {
         display: block;
-        height: 650px;
     }
 }
 
 @media only screen and (min-width: 1140px) {
     .projects {
         display: block;
-        height: 350px;
     }
     .subtitle-text {
         display: none;
@@ -486,7 +483,6 @@ now override the 3.3 new styles for modern browsers & apply opacity
 @media only screen and (min-width: 1500px) {
     .projects {
         display: block;
-        height: 350px;
     }
     .subtitle-text {
         display: inline;

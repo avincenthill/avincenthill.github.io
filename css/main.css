@@ -206,7 +206,11 @@ body {
     opacity: 1;
 }
     
-.project-wrapper:hover > .project-link, .project-wrapper:hover > .icon-link {
+.project-wrapper:hover > .project-link {
+    opacity: 0.25;
+}
+
+.icon-link {
     opacity: 0.25;
 }
 

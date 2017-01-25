@@ -69,9 +69,10 @@ body {
     font: 16px/26px Helvetica, Helvetica Neue, Arial;
 }
 
-.wrapper.clearfix {
+.clearfix {
     width: 75%;
     margin: auto;
+    overflow: hidden;
 }
 
 
@@ -237,6 +238,20 @@ body {
     border: none;
     border-radius: 0 !important;
 }
+
+
+.project-vid {
+    display: block;
+    height: 250px;
+    width: 250px;
+    border: none;
+    border-radius: 0;
+}
+
+.video {
+    overflow: hidden;
+}
+
 
 .links-wrapper {
     display: flex;

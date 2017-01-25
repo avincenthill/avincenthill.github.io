@@ -1,12 +1,11 @@
-//Creates a string with today's date
-function TodaysDateString() {
-    return new Date().toDateString()
-};
+// Plays webm video on hover
+var figure = $(".video").hover( hoverVideo, hideVideo );
 
-//Adds a string to an HTML ID
-function putsTodaysDateFormatted(htmlId) {
-    document.getElementById(htmlId).innerHTML += " " + TodaysDateString();
-};
+function hoverVideo(e) {
+    $('video', this).get(0).play(); 
+}
 
-//Adds todays date to the site subtitle
-putsTodaysDateFormatted("date");
+function hideVideo(e) {
+    $('video', this).get(0).currentTime = 0; 
+    $('video', this).get(0).pause(); 
+}

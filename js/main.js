@@ -1,11 +1,11 @@
 // Plays webm video on hover
-var figure = $(".video").hover( hoverVideo, hideVideo );
+$(".video-cover").hover( hoverVideo, hideVideo );
 
 function hoverVideo(e) {
-    $('video', this).get(0).play(); 
+    this.nextElementSibling.play();
 }
 
 function hideVideo(e) {
-    $('video', this).get(0).currentTime = 0; 
-    $('video', this).get(0).pause(); 
+    this.nextElementSibling.currentTime = 0;
+    this.nextElementSibling.pause();
 }

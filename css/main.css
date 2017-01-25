@@ -80,7 +80,7 @@ body {
    =================== */
 
 .header-container {
-    height: 81px;
+    height: auto;
 }
 
 .footer-container,
@@ -100,15 +100,11 @@ body {
 .title {
     display: block;
     position: relative;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    top: 40px;
     text-align: center;
-    max-width: 60%;
     margin: auto;
     font-family: 'bebas_neueregular', Fallback, sans-serif;
     font-size: 60px;
-    font-size: 8vmin;
+    font-size: 10vmin;
     font-weight: 500;
     font-kerning: normal;
     color: #000000;
@@ -126,6 +122,11 @@ body {
     font-kerning: normal;
     color: #000000;
     opacity: .87;
+}
+
+.subtitle {
+    font-size: 4.5vmin !important;
+    color: #6da9cf;
 }
 
 .title-countries {
@@ -201,31 +202,53 @@ body {
     display: block;
     height: auto;
 }
-.project-wrapper:hover > .project-link:hover {
+.project-wrapper:hover > .project-link:hover, .project-wrapper:hover > .icon-link:hover {
     opacity: 1;
 }
     
-.project-wrapper:hover > .project-link {
+.project-wrapper:hover > .project-link, .project-wrapper:hover > .icon-link {
     opacity: 0.25;
 }
 
 .project-wrapper {
     display: block;
     text-align: center;
+    width: 100%;
 }
 
 .project-link {
     display: inline-block;
-    margin: auto;
+    margin: 4px;
     height: 250px;
     width: 250px;
-    transition: opacity ease-in-out 0.2s;
+    transition: opacity ease-in-out 0.1s;
+    box-shadow: 0px 0px 50px rgba(0,0,0,0.1);
     color: none;
+    background-color: white;
 }
 
 .project-img {
     display: block;
     height: 100%;
+    border: none;
+    border-radius: 0 !important;
+}
+
+.links-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-top: 10px;
+    height: inherit;
+}
+
+.icon-link {
+    display: inline-block;
+    margin: 0px;
+    height: 45px;
+    width: 45px;
+    transition: opacity ease-in-out 0.1s;
+    color: none;
 }
 
 IMG.countries {

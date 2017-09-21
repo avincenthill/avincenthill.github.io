@@ -76,6 +76,7 @@ body {
 
 canvas{
     background: white;
+    margin: 0;
 }
 
 /* ===================

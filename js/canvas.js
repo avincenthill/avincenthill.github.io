@@ -28,6 +28,7 @@ for (i = 0; i < 300; i += 1) {
 */
 
 //TBD: make this object oriented
+/*
 function Tree(x, y, lwidth){
     this.x = x;
     this.y = y;
@@ -59,3 +60,4 @@ function animate() {
     tree2.grow(); 
 }
 animate();
+*/

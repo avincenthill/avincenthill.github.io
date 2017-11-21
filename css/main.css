@@ -74,6 +74,10 @@ body {
     margin: auto;
 }
 
+canvas{
+    background: white;
+    margin: 0;
+}
 
 /* ===================
     ALL: Custom Theme
@@ -89,6 +93,7 @@ body {
     font-size: 40px;
     font-size: 5.9vmin;
     text-align: center;
+    color: #6da9cf;
 }
 
 .header-container,
@@ -349,6 +354,12 @@ nav a:hover {
 
 .footer-container footer {
     padding: 1px 0;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+    color: #6da9cf;
+
 }
 
 .footer-container footer > h1 {

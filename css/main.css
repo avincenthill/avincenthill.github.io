@@ -321,10 +321,11 @@ IMG.countries {
 }
 
 span.cointext {
-    font-size: 16px;
+    font-size: 14px;
     overflow-wrap: break-word;
     text-align: center;
     line-height: 1;
+    font-family: day_roman;
 }
 
 .cointitle {

@@ -144,9 +144,17 @@ form > img {
 }
 
 .subtitle {
-    font-family: Helvetica, "Trebuchet MS", sans-serif;
-    font-size: 4vmin !important;
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: auto;
+    font-family: 'day_roman';
+    font-size: 20px;
+    font-size: 4vmin;
+    font-weight: 500;
+    font-kerning: normal;
     color: #000000;
+    line-height: 1.25;
 }
 
 .title-countries {

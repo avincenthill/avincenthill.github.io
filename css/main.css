@@ -737,3 +737,11 @@ now override the 3.3 new styles for modern browsers & apply opacity
         page-break-after: avoid;
     }
 }
+
+.shirt_nsa {
+    background: url(/img/logos/woot_logo.svg) no-repeat bottom 10px right/50% 30px, url(/img/NSA.png) no-repeat center center/242px 242px;
+}
+
+.shirt_hilbert {
+    background: url(/img/logos/woot_logo.svg) no-repeat bottom 10px right/50% 30px, url(/img/Hilbert.png) no-repeat center center/242px 242px;
+}

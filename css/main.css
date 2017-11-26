@@ -74,14 +74,24 @@ body {
     margin: auto;
 }
 
-canvas{
+canvas {
     background: white;
     margin: 0;
 }
 
+
 /* ===================
     ALL: Custom Theme
    =================== */
+
+
+/* Paypal button fix centering, will break images in forms so watch out! */
+
+form > img {
+    visibility: hidden;
+    margin: 0;
+    position: absolute;
+}
 
 .header-container {
     height: auto;
@@ -212,10 +222,12 @@ canvas{
     display: block;
     height: auto;
 }
-.project-wrapper:hover > .project-link:hover, .project-wrapper:hover > .icon-link:hover {
+
+.project-wrapper:hover > .project-link:hover,
+.project-wrapper:hover > .icon-link:hover {
     opacity: 1;
 }
-    
+
 .project-wrapper:hover > .project-link {
     opacity: 0.25;
 }
@@ -225,9 +237,13 @@ canvas{
 }
 
 .project-wrapper {
-    display: block;
     text-align: center;
-    width: 100%;
+    max-width: 1050px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 .project-link {
@@ -237,7 +253,7 @@ canvas{
     height: 250px;
     width: 250px;
     transition: opacity ease-in-out 0.1s;
-    box-shadow: 0px 0px 50px rgba(0,0,0,0.1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
     color: none;
     background-color: white;
 }
@@ -248,7 +264,6 @@ canvas{
     border: none;
     border-radius: 0 !important;
 }
-
 
 .project-vid {
     display: block;
@@ -265,9 +280,7 @@ canvas{
     z-index: 2;
 }
 
-.video {
-}
-
+.video {}
 
 .links-wrapper {
     display: flex;
@@ -305,6 +318,21 @@ IMG.countries {
     position: relative;
     top: -10px;
     left: 1%;
+}
+
+span.cointext {
+    font-size: 16px;
+    overflow-wrap: break-word;
+    text-align: center;
+    line-height: 1;
+}
+
+.cointitle {
+    font-size: 20px;
+}
+
+span.cointext > div {
+    margin: 8px 5px;
 }
 
 
@@ -357,17 +385,15 @@ nav a:hover {
     padding: 100px 5% 100px;
 }
 
-.footer-container footer {
+.footer {
     padding: 1px 0;
     bottom: 0px;
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
     color: #000000;
-}
-
-.footer-container footer > h1 {
-    color: black !important;
+    max-width: 100%;
+    position: relative;
 }
 
 
@@ -618,29 +644,34 @@ now override the 3.3 new styles for modern browsers & apply opacity
    Mobile webm styles
    ========================================================================== */
 
+
 /* This used to work for parent element of button divs */
+
 
 /* But it is not enough now, below dont hide play button parent div */
 
 *::-webkit-media-controls-panel {
-  display: none!important;
-  -webkit-appearance: none;
+    display: none!important;
+    -webkit-appearance: none;
 }
+
 
 /* Old shadow dom for play button */
 
 *::--webkit-media-controls-play-button {
-  display: none!important;
-  -webkit-appearance: none;
+    display: none!important;
+    -webkit-appearance: none;
 }
 
+
 /* New shadow dom for play button */
+
 
 /* This one works */
 
 *::-webkit-media-controls-start-playback-button {
-  display: none!important;
-  -webkit-appearance: none;
+    display: none!important;
+    -webkit-appearance: none;
 }
 
 

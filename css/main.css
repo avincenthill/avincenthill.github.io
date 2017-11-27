@@ -103,18 +103,20 @@ form > img {
     position: relative;
     text-align: center;
     margin: auto;
-    font-family: Helvetica, "Trebuchet MS", Verdana, sans-serif;
     font-size: 10px;
     font-size: 5vmin;
     font-weight: 250;
     font-kerning: normal;
-    color: #000000;
 }
 
 .header-container,
+.main aside {
+    background: #d11c00;
+}
+
 .footer-container,
 .main aside {
-    background: #a9cce2;
+    background: #d11c00;
 }
 
 .title {
@@ -127,7 +129,7 @@ form > img {
     font-size: 10vmin;
     font-weight: 500;
     font-kerning: normal;
-    color: #000000;
+    color: white;
     line-height: .9;
 }
 
@@ -148,14 +150,13 @@ form > img {
     display: block;
     position: relative;
     text-align: center;
-    margin: auto;
     font-family: 'Fira Sans', sans-serif;
     font-size: 20px;
     font-size: 4vmin;
     font-weight: 500;
     font-kerning: normal;
-    color: #000000;
-    line-height: 1.5;
+    color: white;
+    line-height: 1.2;
 }
 
 .title-countries {
@@ -401,7 +402,7 @@ nav a:hover {
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
-    color: #000000;
+    color: white;
     max-width: 100%;
     position: relative;
 }
@@ -749,4 +750,8 @@ now override the 3.3 new styles for modern browsers & apply opacity
 
 .coinsubtitle {
     font-size: 10px;
+}
+
+.design_christina {
+    background: url(/img/logos/AVH-Design-logo.png) no-repeat bottom 10px right/50px 50px, url(/img/christina_logo.png) no-repeat center center/242px 242px;
 }

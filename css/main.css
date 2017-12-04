@@ -131,6 +131,7 @@ form > img {
     font-kerning: normal;
     color: white;
     line-height: .9;
+    padding-top: 10px;
 }
 
 .title-project {

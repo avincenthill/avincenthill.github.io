@@ -246,7 +246,9 @@ form > img {
 }
 
 .project-wrapper:hover .project_description {
-    display: block;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
 }
 
 .icon-link:hover {
@@ -258,7 +260,7 @@ form > img {
 .project-wrapper:hover .project-img,
 .project-wrapper:hover .woot_logo,
 .project-wrapper:hover video {
-    opacity: 0.3;
+    opacity: 0.2;
 }
 
 .icon-link {
@@ -285,6 +287,7 @@ form > img {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
     color: none;
     background-color: white;
+    overflow: hidden;
 }
 
 .project-img {
@@ -776,9 +779,7 @@ now override the 3.3 new styles for modern browsers & apply opacity
     background: url(/img/logos/AVH-Design-Logo.svg) no-repeat bottom 10px right/50px 50px, url(/img/christina_logo.png) no-repeat center center/242px 242px;
 }
 
-.project-link {
-    overflow: hidden;
-}
+
 
 .woot_logo {
     height: 100%;
@@ -805,13 +806,15 @@ now override the 3.3 new styles for modern browsers & apply opacity
     width: 100%;
     position: absolute;
     z-index: 1;
-    padding-top: 60px;
     font-size: 25px;
     font-family: 'Fira Sans', sans-serif;
-    color: black;
+    color: rgba(220, 20, 60, 0.9);
     opacity: 1 !important;
     display: none;
-    padding: 60px 10px 0px 10px;
+    padding: 0px 10px;
+    text-shadow: 0px 0px 7px #d0f8f0;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .project_description > p {}

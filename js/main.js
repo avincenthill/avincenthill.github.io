@@ -1,5 +1,5 @@
-// Plays webm video on hover
-$(".video-cover").hover( hoverVideo, hideVideo );
+//play webm video on hover
+$(".video-cover").hover(hoverVideo, hideVideo);
 
 function hoverVideo(e) {
     this.nextElementSibling.play();

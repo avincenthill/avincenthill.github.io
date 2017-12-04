@@ -242,10 +242,13 @@ form > img {
 }
 
 .project-wrapper:hover > .project-link:hover .project_description {
-    display: none;
+    -webkit-animation: fadeOut 1s;
+    animation: fadeOut 1s;
 }
 
 .project-wrapper:hover .project_description {
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
@@ -779,8 +782,6 @@ now override the 3.3 new styles for modern browsers & apply opacity
     background: url(/img/logos/AVH-Design-Logo.svg) no-repeat bottom 10px right/50px 50px, url(/img/christina_logo.png) no-repeat center center/242px 242px;
 }
 
-
-
 .woot_logo {
     height: 100%;
     width: 100%;
@@ -825,4 +826,60 @@ now override the 3.3 new styles for modern browsers & apply opacity
     border: none;
     border-radius: 0 !important;
     background-color: transparent;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        display: flex;
+        opacity: 0;
+    }
+    99% {
+        display: flex;
+    }
+    100% {
+        display: none;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        display: flex;
+        opacity: 0;
+    }
+    99% {
+        display: flex;
+    }
+    100% {
+        display: none;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {
+        display: flex;
+        opacity: 1;
+    }
+    99% {
+        display: flex;
+    }
+    100% {
+        display: none !important;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        display: flex;
+        opacity: 1;
+    }
+    99% {
+        display: flex;
+    }
+    100% {
+        display: none !important;
+        opacity: 0;
+    }
 }

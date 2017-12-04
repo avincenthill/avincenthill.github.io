@@ -242,13 +242,15 @@ form > img {
 }
 
 .project-wrapper:hover > .project-link:hover .project_description {
-    -webkit-animation: fadeOut 1s;
-    animation: fadeOut 1s;
+    -webkit-animation: fadeOut .3s;
+    animation: fadeOut .3s;
+    height: 0px;
+    overflow: hidden;
 }
 
 .project-wrapper:hover .project_description {
-    -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
+    -webkit-animation: fadeIn .3s;
+    animation: fadeIn .3s;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
@@ -796,10 +798,10 @@ now override the 3.3 new styles for modern browsers & apply opacity
     transform: scale(3.5);
 }
 
-.woot_logo:hover + .zoomable1_75 {
-    -moz-transform: scale(1.75);
-    -webkit-transform: scale(1.75);
-    transform: scale(1.75);
+.woot_logo:hover + .zoomable1_25 {
+    -moz-transform: scale(1.25);
+    -webkit-transform: scale(1.25);
+    transform: scale(1.25);
 }
 
 .project_description {
@@ -830,56 +832,54 @@ now override the 3.3 new styles for modern browsers & apply opacity
 
 @-webkit-keyframes fadeIn {
     0% {
-        display: flex;
+        display: none;
         opacity: 0;
     }
     99% {
         display: flex;
     }
     100% {
-        display: none;
+        display: flex;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
         opacity: 1;
     }
 }
 
 @keyframes fadeIn {
     0% {
-        display: flex;
         opacity: 0;
     }
-    99% {
-        display: flex;
-    }
     100% {
-        display: none;
         opacity: 1;
     }
 }
 
 @-webkit-keyframes fadeOut {
     0% {
-        display: flex;
+        height: 250px;
         opacity: 1;
     }
-    99% {
-        display: flex;
-    }
     100% {
-        display: none !important;
+        height: 0px;
         opacity: 0;
     }
 }
 
 @keyframes fadeOut {
     0% {
-        display: flex;
+        height: 250px;
         opacity: 1;
     }
-    99% {
-        display: flex;
-    }
     100% {
-        display: none !important;
+        height: 0px;
         opacity: 0;
     }
 }

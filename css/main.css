@@ -242,15 +242,15 @@ form > img {
 }
 
 .project-wrapper:hover > .project-link:hover .project_description {
-    -webkit-animation: fadeOut .3s;
-    animation: fadeOut .3s;
-    height: 0px;
+    -webkit-animation: fadeOut .2s;
+    animation: fadeOut .2s;
     overflow: hidden;
+    transform: scale(0);
 }
 
 .project-wrapper:hover .project_description {
-    -webkit-animation: fadeIn .3s;
-    animation: fadeIn .3s;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
@@ -882,4 +882,9 @@ now override the 3.3 new styles for modern browsers & apply opacity
         height: 0px;
         opacity: 0;
     }
+}
+
+.paypal_button:hover {
+    transform: translateY(-2px);
+    transform: scale(1.1);
 }

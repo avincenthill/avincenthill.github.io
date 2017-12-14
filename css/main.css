@@ -265,7 +265,7 @@ form > img {
 .project-wrapper:hover .project-img,
 .project-wrapper:hover .woot_logo,
 .project-wrapper:hover video {
-    opacity: 0.2;
+    opacity: 0.15;
 }
 
 .icon-link {

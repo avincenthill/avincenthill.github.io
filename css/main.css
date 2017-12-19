@@ -134,6 +134,10 @@ form > img {
     padding-top: 10px;
 }
 
+.title:hover {
+    text-decoration: none;
+}
+
 .title-project {
     text-align: center;
     width: 100%;
@@ -364,10 +368,12 @@ span.cointext {
     text-align: center;
     line-height: 1;
     font-family: 'Fira Sans', sans-serif;
+    color: #d0f8f0;
 }
 
 .cointitle {
     font-size: 20px;
+    color: #ffffff;
 }
 
 span.cointext > div {
@@ -678,6 +684,26 @@ now override the 3.3 new styles for modern browsers & apply opacity
     *zoom: 1;
 }
 
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
 
 /* ==========================================================================
    Mobile webm styles
@@ -887,4 +913,11 @@ now override the 3.3 new styles for modern browsers & apply opacity
 .paypal_button:hover {
     transform: translateY(-2px);
     transform: scale(1.1);
+}
+
+.background_animation {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
 }

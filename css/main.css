@@ -87,7 +87,7 @@ canvas {
 
 /* Paypal button fix centering, will break images in forms so watch out! */
 
-form > img {
+form>img {
     visibility: hidden;
     margin: 0;
     position: absolute;
@@ -200,7 +200,7 @@ form > img {
     display: none;
 }
 
-.subtitle > a {
+.subtitle>a {
     display: block;
     float: right;
     font-family: 'bebas_neueregular', Fallback, sans-serif;
@@ -238,14 +238,14 @@ form > img {
     height: auto;
 }
 
-.project-wrapper:hover > .project-link:hover .project-img,
-.project-wrapper:hover > .project-link:hover .woot_logo,
-.project-wrapper:hover > .project-link:hover video,
+.project-wrapper:hover>.project-link:hover .project-img,
+.project-wrapper:hover>.project-link:hover .woot_logo,
+.project-wrapper:hover>.project-link:hover video,
 .project-wrapper:hover {
     opacity: 1;
 }
 
-.project-wrapper:hover > .project-link:hover .project_description {
+.project-wrapper:hover>.project-link:hover .project_description {
     -webkit-animation: fadeOut .2s;
     animation: fadeOut .2s;
     overflow: hidden;
@@ -376,7 +376,7 @@ span.cointext {
     color: #d0f8f0;
 }
 
-span.cointext > div {
+span.cointext>div {
     margin: 8px 5px;
 }
 
@@ -416,7 +416,6 @@ nav a:hover {
     border-radius: 50%;
     margin: 20px;
     font-size: 2vmin;
-
 }
 
 .clock-face {
@@ -551,21 +550,21 @@ now override the 3.3 new styles for modern browsers & apply opacity
 
 @media all and (transform-3d),
 (-webkit-transform-3d) {
-    .carousel-fade .carousel-inner > .item.next,
-    .carousel-fade .carousel-inner > .item.active.right {
+    .carousel-fade .carousel-inner>.item.next,
+    .carousel-fade .carousel-inner>.item.active.right {
         opacity: 0;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
-    .carousel-fade .carousel-inner > .item.prev,
-    .carousel-fade .carousel-inner > .item.active.left {
+    .carousel-fade .carousel-inner>.item.prev,
+    .carousel-fade .carousel-inner>.item.active.left {
         opacity: 0;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
     }
-    .carousel-fade .carousel-inner > .item.next.left,
-    .carousel-fade .carousel-inner > .item.prev.right,
-    .carousel-fade .carousel-inner > .item.active {
+    .carousel-fade .carousel-inner>.item.next.left,
+    .carousel-fade .carousel-inner>.item.prev.right,
+    .carousel-fade .carousel-inner>.item.active {
         opacity: 1;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
@@ -849,13 +848,13 @@ a:active {
     background: url(/img/logos/woot_logo.svg) no-repeat bottom 10px right/50% 30px;
 }
 
-.woot_logo:hover + .zoomable3_5 {
+.woot_logo:hover+.zoomable3_5 {
     -moz-transform: scale(3.5);
     -webkit-transform: scale(3.5);
     transform: scale(3.5);
 }
 
-.woot_logo:hover + .zoomable1_25 {
+.woot_logo:hover+.zoomable1_25 {
     -moz-transform: scale(1.25);
     -webkit-transform: scale(1.25);
     transform: scale(1.25);
@@ -877,7 +876,7 @@ a:active {
     font-weight: bold;
 }
 
-.project_description > p {}
+.project_description>p {}
 
 .icon-img {
     display: block;
@@ -966,9 +965,10 @@ a:active {
     width: 300%;
     height: 45px;
 }
+
 .time {
     font-family: 'Fira Sans', sans-serif;
-    font-size: 3vmin;
+    font-size: 40px;
     color: white;
     position: absolute;
     text-align: center;

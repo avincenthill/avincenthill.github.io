@@ -20,11 +20,18 @@ function setDate() {
     var hourDegrees = ((hour / 12) * 360) + ((mins / 60) * 30) - 180;
     hourHand.style.transform = `rotate(${hourDegrees}deg)`;
 
+    //create time string and add formatting 0s
     var time = ""
-    if (mins < 10) {
-        time = time.concat(hour, ":0", mins)
+    if (hour < 10) {
+        time = time.concat("0", hour)
     } else {
-        time = time.concat(hour, ":", mins)
+        time = time.concat(hour)
+    }
+
+    if (mins < 10) {
+        time = time.concat(":0", mins)
+    } else {
+        time = time.concat(":", mins)
     }
 
     document.getElementById("time").innerHTML = time;

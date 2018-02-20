@@ -1,4 +1,9 @@
-/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
+/*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ dc143c*/
+
+:root {
+    --color1: #dc143c;
+    --color2: #d0f8f0;
+}
 
 html {
     color: #000000;
@@ -75,7 +80,7 @@ body {
 }
 
 canvas {
-    background: #d0f8f0;
+    background: var(--color2);
     margin: 0;
 }
 
@@ -111,12 +116,12 @@ form>img {
 
 .header-container,
 .main aside {
-    background: #dc143c;
+    background: var(--color1);
 }
 
 .footer-container,
 .main aside {
-    background: #dc143c;
+    background: var(--color1);
 }
 
 .title {
@@ -129,7 +134,7 @@ form>img {
     font-size: 10vmin;
     font-weight: 500;
     font-kerning: normal;
-    color: white;
+    color: var(--color2);
     line-height: .9;
     padding-top: 10px;
 }
@@ -368,12 +373,12 @@ span.cointext {
     text-align: center;
     line-height: 1;
     font-family: 'Fira Sans', sans-serif;
-    color: #d0f8f0;
+    color: var(--color2);
 }
 
 .cointitle {
     font-size: 20px;
-    color: #d0f8f0;
+    color: var(--color2);
 }
 
 span.cointext>div {
@@ -412,7 +417,7 @@ nav a:hover {
 }
 
 .clock {
-    border: 100px solid #dc143c;
+    border: 100px solid var(--color1);
     border-radius: 50%;
     margin: 20px;
     font-size: 2vmin;
@@ -428,7 +433,7 @@ nav a:hover {
 .hand {
     width: 200%;
     height: 80px;
-    background: #d0f8f0;
+    background: var(--color2);
     position: absolute;
     transform-origin: 0% 0%;
     transform: rotate(90deg);
@@ -452,7 +457,7 @@ nav a:hover {
 }
 
 .main aside {
-    color: white;
+    color: var(--color2);
     padding: 100px 5% 100px;
 }
 
@@ -462,7 +467,7 @@ nav a:hover {
     left: 0px;
     right: 0px;
     margin-bottom: 0px;
-    color: white;
+    color: var(--color2);
     max-width: 100%;
     position: relative;
 }
@@ -867,11 +872,11 @@ a:active {
     z-index: 1;
     font-size: 25px;
     font-family: 'Fira Sans', sans-serif;
-    color: rgba(220, 20, 60, 0.9);
+    color: var(--color1);
     opacity: 1 !important;
     display: none;
     padding: 0px 10px;
-    text-shadow: 0px 0px 7px #d0f8f0;
+    text-shadow: 0px 0px 7px var(--color2);
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -969,7 +974,7 @@ a:active {
 .time {
     font-family: 'Fira Sans', sans-serif;
     font-size: 40px;
-    color: white;
+    color: var(--color2);
     position: absolute;
     text-align: center;
     top: 50%;

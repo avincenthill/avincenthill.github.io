@@ -1,8 +1,15 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ dc143c*/
 
+
+/*site color variables*/
+
 :root {
-    --color1: #dc143c;
-    --color2: #d0f8f0;
+    /*    darker color*/
+    --color1: #003262;
+    /*    lighter color*/
+    --color2: #FDB515;
+    /*    lightest color, usually white*/
+    --color3: #ffffff;
 }
 
 html {
@@ -165,7 +172,7 @@ form>img {
     font-size: 4vmin;
     font-weight: 500;
     font-kerning: normal;
-    color: white;
+    color: var(--color3);
     line-height: 1.2;
 }
 
@@ -300,7 +307,7 @@ form>img {
     transition: opacity ease-in-out 0.1s;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2);
     color: none;
-    background-color: white;
+    background-color: var(--color3);
     overflow: hidden;
 }
 
@@ -403,13 +410,13 @@ nav a {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    color: white;
+    color: var(--color3);
     background: #e44d26;
 }
 
 nav a:hover,
 nav a:visited {
-    color: white;
+    color: var(--color3);
 }
 
 nav a:hover {
@@ -716,22 +723,22 @@ now override the 3.3 new styles for modern browsers & apply opacity
 }
 
 a:hover {
-    color: white;
+    color: var(--color3);
     text-decoration: none;
 }
 
 a:link {
-    color: white;
+    color: var(--color3);
     text-decoration: none;
 }
 
 a:visited {
-    color: white;
+    color: var(--color3);
     text-decoration: none;
 }
 
 a:active {
-    color: white;
+    color: var(--color3);
     text-decoration: none;
 }
 
@@ -876,7 +883,7 @@ a:active {
     opacity: 1 !important;
     display: none;
     padding: 0px 10px;
-    text-shadow: 0px 0px 7px var(--color2);
+    text-shadow: 0px 0px 7px var(--color3);
     text-transform: uppercase;
     font-weight: bold;
 }

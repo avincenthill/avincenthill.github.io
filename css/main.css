@@ -5,9 +5,9 @@
 
 :root {
     /*    darker color*/
-    --color1: #003262;
+    --color1: #ff6046;
     /*    lighter color*/
-    --color2: #FDB515;
+    --color2: #ffbd46;
     /*    lightest color, usually white*/
     --color3: #ffffff;
 }
@@ -119,6 +119,7 @@ form>img {
     font-size: 5vmin;
     font-weight: 250;
     font-kerning: normal;
+    box-shadow: 0px 500px 0px 500px var(--color1);
 }
 
 .header-container,
@@ -380,12 +381,12 @@ span.cointext {
     text-align: center;
     line-height: 1;
     font-family: 'Fira Sans', sans-serif;
-    color: var(--color2);
+    color: var(--color3);
 }
 
 .cointitle {
     font-size: 20px;
-    color: var(--color2);
+    color: var(--color3);
 }
 
 span.cointext>div {
@@ -440,7 +441,7 @@ nav a:hover {
 .hand {
     width: 200%;
     height: 80px;
-    background: var(--color2);
+    background: var(--color3);
     position: absolute;
     transform-origin: 0% 0%;
     transform: rotate(90deg);
@@ -981,10 +982,17 @@ a:active {
 .time {
     font-family: 'Fira Sans', sans-serif;
     font-size: 40px;
-    color: var(--color2);
+    color: var(--color3);
     position: absolute;
     text-align: center;
     top: 50%;
     right: 50%;
     transform: translate(50%, 50%);
+}
+
+.logo {
+    height: auto;
+    width: auto;
+    max-width: 50px;
+    max-height: 50px;
 }

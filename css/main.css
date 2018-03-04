@@ -441,7 +441,7 @@ nav a:hover {
 .hand {
     width: 200%;
     height: 80px;
-    background: var(--color3);
+    background: var(--color2);
     position: absolute;
     transform-origin: 0% 0%;
     transform: rotate(90deg);
@@ -996,3 +996,5 @@ a:active {
     max-width: 50px;
     max-height: 50px;
 }
+
+.img-thumbnail {}

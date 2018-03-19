@@ -2,12 +2,12 @@
 $(".video-cover").hover(hoverVideo, hideVideo);
 
 function hoverVideo(e) {
-    this.nextElementSibling.play();
+  this.nextElementSibling.play();
 }
 
 function hideVideo(e) {
-    this.nextElementSibling.currentTime = 0;
-    this.nextElementSibling.pause();
+  this.nextElementSibling.currentTime = 0;
+  this.nextElementSibling.pause();
 }
 
 //change color variables

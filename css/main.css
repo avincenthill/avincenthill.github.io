@@ -145,6 +145,7 @@ form>img {
     color: var(--color2);
     line-height: .9;
     padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .title:hover {
@@ -998,3 +999,38 @@ a:active {
 }
 
 .img-thumbnail {}
+.headshot {
+    width: 15em;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    
+    font-size: 1em;
+    line-height: 1.1;
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--color1);
+    overflow-wrap: break-word;
+    
+    float: lec
+
+}
+
+.description {
+    font-size: 2em;
+    overflow-wrap: break-word;
+    text-align: center;
+    line-height: 1.1;
+    font-family: 'Fira Sans', sans-serif;
+    color: var(--color1);
+    padding-bottom: 1em;
+    padding-top: 0em;
+    padding: .5em;
+}
+
+.pic {
+    border-radius: 50%;
+	box-shadow: inset 0 0 60px rgba(0, 0, 0, 1);
+	overflow: hidden;
+}
